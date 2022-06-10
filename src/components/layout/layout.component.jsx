@@ -12,7 +12,7 @@ const Layout = () => {
             <Menu />
             <div className="main">
                 <Sidebar />
-                {/* <Explorer /> */}
+                <Explorer />
             </div>
             <div className="footer">
                 <Footer/>
