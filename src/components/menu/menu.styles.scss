@@ -1,0 +1,60 @@
+.menu-container {
+	background-color: #1e1f2b;
+	color: rgb(132, 132, 132);
+	font-family: 'Monaco', sans-serif;
+	height: 2.3vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 15px;
+
+	.logo {
+		display: flex;
+		width: 1em;
+		height: 1em;
+		padding: 0 8px;
+		cursor: pointer;
+	}
+
+	.menu-links {
+		display: flex;
+		list-style: none;
+		font-size: 0.72em;
+
+		* {
+			padding: 3px 7.5px;
+		}
+
+		*:hover {
+			cursor: pointer;
+			background-color: hsla(0, 100%, 100%, 0.1);
+			border-radius: 4px;
+		}
+	}
+	.title {
+		display: flex;
+		// background-color: red;
+		justify-content: center;
+		flex: 4;
+	}
+	.icons {
+		display: flex;
+		justify-content: center;
+		padding: 0px 5px;
+		flex: 0.1;
+		* {
+			padding: 10px;
+			height: 15px;
+			width: 15px;
+			cursor: pointer;
+		}
+		:hover {
+			background-color: hsla(0, 100%, 100%, 0.1);
+		}
+	}
+	.icon {
+		display: flex;
+
+		padding: 10px 40px;
+	}
+}

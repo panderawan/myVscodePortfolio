@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+/* .App {
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	display: grid;
+	grid-template-columns: 0.13fr 0.5fr 3fr;
+	grid-template-rows: 0.04fr 0.04fr 1.7fr 0.04fr;
+	gap: 0px 0px;
+	grid-template-areas: "file file file" "sidebar explorer tabs"
+		"sidebar explorer content" "footer footer footer";
+	height: 100vh;
+	background-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.file {
+	grid-area: menu;
+	background-color: #1e1f2b;
+	color: white;
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer {
+	grid-area: footer;
+	background-color: #1e1f2b;
+	color: white;
+	border-top: 1px solid hsla(0, 0%, 0%, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.tabs {
+	grid-area: tabs;
+	background-color: #282a3a;
+	color: white;
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+	grid-area: sidebar;
+	background-color: #161821;
+	color: white;
+	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
 }
+
+.explorer {
+	grid-area: explorer;
+	background-color: #1e1f2b;
+	color: white;
+	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+
+.content {
+	grid-area: content;
+	background-color: #282a3a;
+	color: white;
+} */

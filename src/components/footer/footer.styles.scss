@@ -1,0 +1,25 @@
+.footer-container {
+	background-color: #1e1f2b;
+	color: rgb(199, 199, 199);
+	display: flex;
+	.footer-links {
+		height: 1.3vh;
+		width: 100vw;
+		display: flex;
+		list-style: none;
+		font-size: 0.75em;
+		align-items: center;
+	}
+
+	.footerLink {
+		padding: 0 5px;
+	}
+	// .footerLink:first-child {
+	// 	padding-left: 30px;
+	// }
+
+	.footerLink:hover {
+		cursor: pointer;
+		background-color: hsla(0, 100%, 100%, 0.1);
+	}
+}
