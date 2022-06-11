@@ -1,60 +1,74 @@
 .menu-container {
 	background-color: #1e1f2b;
-	color: rgb(132, 132, 132);
+	color: rgba(255, 255, 255, 0.43);
 	font-family: 'Monaco', sans-serif;
-	height: 2.3vh;
+	height: 30px;
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	font-size: 15px;
-
-	.logo {
-		display: flex;
-		width: 1em;
-		height: 1em;
-		padding: 0 8px;
-		cursor: pointer;
-	}
+	font-size: 0.95rem;
 
 	.menu-links {
 		display: flex;
+		flex: 1;
+		margin-right: auto;
 		list-style: none;
-		font-size: 0.72em;
+
+		:first-child {
+			display: flex;
+			width: 1.2rem;
+			height: 1rem;
+			cursor: pointer;
+			padding-left: 7px;
+			padding-right: 5px;
+		}
+		:first-child:hover {
+			background-color: transparent;
+			cursor: default;
+		}
 
 		* {
-			padding: 3px 7.5px;
+			font-size: 0.71rem;
+			padding: 2px 7.5px;
 		}
 
 		*:hover {
 			cursor: pointer;
 			background-color: hsla(0, 100%, 100%, 0.1);
-			border-radius: 4px;
+			border-radius: 5px;
 		}
 	}
 	.title {
-		display: flex;
-		// background-color: red;
-		justify-content: center;
-		flex: 4;
+		flex: 1;
+		text-align: center;
+		font-size: 0.65rem;
+		color: rgba(255, 255, 255, 0.516);
+		margin: 0px;
+		padding: 0px;
 	}
+
 	.icons {
+		color: rgba(255, 255, 255, 0.516);
 		display: flex;
-		justify-content: center;
-		padding: 0px 5px;
-		flex: 0.1;
+		flex: 1;
+		align-items: center;
+		margin-left: auto;
 		* {
-			padding: 10px;
+			padding: 6px 13px;
 			height: 15px;
-			width: 15px;
+			width: 16px;
 			cursor: pointer;
 		}
+		:first-child {
+			margin-left: auto;
+		}
+
 		:hover {
 			background-color: hsla(0, 100%, 100%, 0.1);
 		}
-	}
-	.icon {
-		display: flex;
-
-		padding: 10px 40px;
+		:last-child:hover {
+			background-color: red;
+			color: white;
+		}
 	}
 }

@@ -14,9 +14,7 @@ const Layout = () => {
                 <Sidebar />
                 <Explorer />
             </div>
-            <div className="footer">
                 <Footer/>
-            </div>
             </div>
         </>
     );

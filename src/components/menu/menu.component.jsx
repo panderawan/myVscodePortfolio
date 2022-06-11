@@ -6,10 +6,8 @@ import { Minimize, Restore, Close } from '../icons/icons';
 const Menu = () => {
 	return (
 		<div className='menu-container'>
-			<Link to='/'>
-				<VscLogo className='logo' />
-			</Link>
 			<nav className='menu-links'>
+				<VscLogo />
 				<li>File</li>
 				<li>Edit</li>
 				<li>Selection</li>
