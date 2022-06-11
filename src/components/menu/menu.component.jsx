@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './menu.styles.scss';
 import { ReactComponent as VscLogo } from '../../assets/vsclogo.svg';
 import { Minimize, Restore, Close } from '../icons/icons';
