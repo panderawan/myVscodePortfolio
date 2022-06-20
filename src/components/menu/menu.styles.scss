@@ -1,12 +1,11 @@
 .menu-container {
+	display: flex;
 	background-color: #1e1f2b;
 	color: rgba(255, 255, 255, 0.43);
 	font-family: 'Monaco', sans-serif;
 	height: 30px;
 	align-items: center;
 	justify-content: center;
-	display: flex;
-	font-size: 0.95rem;
 
 	.menu-links {
 		display: flex;
@@ -28,7 +27,7 @@
 		}
 
 		* {
-			font-size: 0.71rem;
+			font-size: 0.75em;
 			padding: 2px 7.5px;
 		}
 

@@ -1,25 +1,82 @@
 .footer-container {
 	background-color: #1e1f2b;
-	color: rgb(199, 199, 199);
+	color: rgba(255, 255, 255, 0.43);
 	display: flex;
 	overflow-x: hidden;
+
 	.footer-links {
 		height: 18px;
 		display: flex;
+		flex: 1;
 		list-style: none;
-		font-size: 0.75em;
 		align-items: center;
+
+		.footerLeft {
+			display: flex;
+			flex: 1;
+			align-items: center;
+			font-size: 0.60em;
+
+			.gitMain {
+				display: flex;
+				align-items: center;
+				margin: 0 4px;
+				padding: 0 4px;
+				svg {
+					margin-right: 4px;
+				}
+			}
+			.crossWarning {
+				display: flex;
+				align-items: center;
+				margin: 0 4px;
+				padding: 0 2px;
+
+				svg {
+					width: 1.3em;
+					height: 1.3em;
+					margin: 0 2px;
+				}
+			}
+
+			li:hover {
+				cursor: pointer;
+				background-color: hsla(0, 100%, 100%, 0.05);
+			}
+		}
 	}
 
-	.footerLink {
-		padding: 0 5px;
-	}
-	// .footerLink:first-child {
-	// 	padding-left: 30px;
-	// }
+	.footerRight {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		font-size: 0.60em;
 
-	.footerLink:hover {
-		cursor: pointer;
-		background-color: hsla(0, 100%, 100%, 0.1);
+		.prettierBelt {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			padding: 0 4px;
+		}
+		.prettierBelt:hover {
+			cursor: pointer;
+			background-color: hsla(0, 100%, 100%, 0.05);
+		}
+		.bell {
+			display: flex;
+			align-items: center;
+
+			:hover {
+				cursor: pointer;
+				background-color: hsla(0, 100%, 100%, 0.05);
+			}
+		}
+		.bell svg {
+			padding: 2px 2px;
+			margin: 0px 6px;
+			display: flex;
+			width: 1.3em;
+			height: 1.3em;
+		}
 	}
 }

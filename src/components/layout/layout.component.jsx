@@ -9,11 +9,11 @@ const Layout = () => {
     return (
         <>
             <div className="layout">
-            <Menu />
-            <div className="main">
-                <Sidebar />
-                <Explorer />
-            </div>
+                <Menu />
+                <div className="main">
+                    <Sidebar />
+                    <Explorer />
+                </div>
                 <Footer/>
             </div>
         </>
