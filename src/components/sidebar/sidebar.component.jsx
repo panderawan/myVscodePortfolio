@@ -1,27 +1,35 @@
 import { Outlet, Link } from 'react-router-dom'
 import './sidebar.styles.scss'
-import {FileLogo, GithubIcon,AccountIcon,MailIcon } from '../icons/icons';
+import {FileLogo, GithubIcon,AccountIcon,MailIcon, ProfileLogo, SettingsLogo } from '../icons/icons';
 
 const sidebarItems = [
     {
         Icon: AccountIcon,
-        path:'/1'
+        path: '/1'
     },
     {
         Icon: GithubIcon,
-        path:'/2'
+        path: '/2'
     },
     {
         Icon: FileLogo,
-        path:'/3'
+        path: '/3'
     },
     {
         Icon: MailIcon,
-        path:'/4'
+        path: '/4'
     },
     {
         Icon: FileLogo,
-        path:'/5'
+        path: '/5'
+    },
+    {
+        Icon: ProfileLogo,
+        path:'/6'
+    },
+    {
+        Icon: SettingsLogo,
+        path:'/7'
     }
 ]
 const Sidebar = () => {

@@ -1,4 +1,7 @@
 .tabs {
+	box-sizing: border-box;
+	border: 1px solid hsla(0, 0%, 0%, 0.3);
+
 	display: flex;
 	background-color: #161821;
 	height: calc(100vh - 30px - 17px);
@@ -16,6 +19,12 @@
 		padding-left: 7px;
 	}
 	a:first-child {
-		padding-top: 10px;
+		padding-top: 5px;
+	}
+	a:last-child {
+		padding-bottom: 5px;
+	}
+	a:nth-of-type(6) {
+		margin-top: auto;
 	}
 }

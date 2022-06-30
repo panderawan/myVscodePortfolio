@@ -5,6 +5,8 @@
 	overflow-x: hidden;
 
 	.footer-links {
+		box-sizing: border-box;
+		border-top: 1px solid hsla(0, 0%, 0%, 0.3);
 		height: 18px;
 		display: flex;
 		flex: 1;

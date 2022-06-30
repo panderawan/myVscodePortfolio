@@ -1,14 +1,15 @@
 .menu-container {
+	box-sizing: border-box;
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
 	display: flex;
 	background-color: #1e1f2b;
 	color: rgba(255, 255, 255, 0.43);
 	font-family: 'Monaco', sans-serif;
 	height: 30px;
-	align-items: center;
-	justify-content: center;
 
 	.menu-links {
 		display: flex;
+		align-items: center;
 		flex: 1;
 		margin-right: auto;
 		list-style: none;
@@ -38,16 +39,17 @@
 		}
 	}
 	.title {
+		display: flex;
 		flex: 1;
-		text-align: center;
+		align-items: center;
+		justify-content: center;
 		font-size: 0.65rem;
-		color: rgba(255, 255, 255, 0.516);
-		margin: 0px;
-		padding: 0px;
+		color: hsla(0, 100%, 100%, 0.5);
+		margin: auto;
 	}
 
 	.icons {
-		color: rgba(255, 255, 255, 0.516);
+		color: hsla(0, 100%, 100%, 0.5);
 		display: flex;
 		flex: 1;
 		align-items: center;

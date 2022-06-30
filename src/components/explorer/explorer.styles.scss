@@ -1,3 +1,70 @@
 .explorer-container {
-	background-color: blue;
+	width: 300px;
+	background-color: #1e1f2b;
+	box-sizing: border-box;
+	border-right: 1px solid hsla(0, 0%, 0%, 0.3);
+
+	.header {
+		display: flex;
+		align-items: center;
+		padding-left: 15px;
+		height: 25px;
+		font-size: 0.7em;
+		font-weight: normal;
+		color: hsla(0, 100%, 100%, 0.1);
+
+		.ellipsis {
+			display: flex;
+			margin-left: auto;
+			margin-right: 8px;
+			color: hsla(0, 100%, 100%, 0.4);
+			padding: 2px 3px;
+		}
+		.ellipsis:hover {
+			background-color: hsla(0, 100%, 100%, 0.1);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+	.portfolio {
+		display: flex;
+		align-items: center;
+		color: hsla(0, 100%, 100%, 0.4);
+		font-size: 0.7em;
+		font-weight: 700;
+		cursor: pointer;
+		.chevron {
+			color: hsla(0, 100%, 100%, 0.6);
+		}
+	}
+	.explorer-items {
+		a:hover,
+		a:visited,
+		a:link,
+		a:active {
+			text-decoration: none;
+		}
+		.itemContainer {
+			display: flex;
+			align-items: center;
+			font-size: 0.7rem;
+			height: 20px;
+			.icon {
+				display: flex;
+				margin-left: 15px;
+			}
+			.name {
+				display: flex;
+				text-decoration: none;
+				margin-left: 5px;
+				color: hsla(0, 100%, 100%, 0.6);
+				.name:hover {
+					background-color: red;
+				}
+			}
+		}
+		.itemContainer:hover {
+			background-color: hsla(0, 100%, 100%, 0.05);
+		}
+	}
 }
