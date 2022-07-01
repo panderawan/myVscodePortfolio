@@ -258,7 +258,26 @@ export const Ellipsis = (props) => {
 		</svg>
 	);
 };
-export const Chevron = (props) => {
+export const ChevronRight = (props) => {
+	return (
+		<svg
+			width='16'
+			height='16'
+			viewBox='0 0 16 16'
+			fill='currentColor'
+			xmlns='http://www.w3.org/2000/svg'
+			{...props}
+		>
+			<path
+				fillRule='evenodd'
+				clipRule='evenodd'
+				d='M10.0722 8.02397L5.71484 3.66666L6.33356 3.04794L11.0002 7.71461V8.33333L6.33356 13L5.71484 12.3813L10.0722 8.02397Z'
+			/>
+		</svg>
+	);
+};
+
+export const ChevronBottom = (props) => {
 	return (
 		<svg
 			width='16'
@@ -276,6 +295,7 @@ export const Chevron = (props) => {
 		</svg>
 	);
 };
+
 export const homeIcon = (props) => {
 	return (
 		<svg

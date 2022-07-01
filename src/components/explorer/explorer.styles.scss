@@ -1,5 +1,6 @@
 .explorer-container {
 	width: 300px;
+	height: calc(100vh - 29px - 19px);
 	background-color: #1e1f2b;
 	box-sizing: border-box;
 	border-right: 1px solid hsla(0, 0%, 0%, 0.3);
@@ -26,7 +27,7 @@
 			cursor: pointer;
 		}
 	}
-	.portfolio {
+	.category {
 		display: flex;
 		align-items: center;
 		color: hsla(0, 100%, 100%, 0.4);
@@ -66,5 +67,31 @@
 		.itemContainer:hover {
 			background-color: hsla(0, 100%, 100%, 0.05);
 		}
+	}
+	.explorer-footer {
+		display: flex;
+		flex-direction: column;
+		color: hsla(0, 100%, 100%, 0.4);
+		font-size: 0.6em;
+		font-weight: 700;
+		cursor: pointer;
+		height: 1110.6px;
+	}
+	.outline {
+		margin-top: auto;
+		display: flex;
+		align-items: center;
+		height: 18px;
+	}
+	.outline:hover {
+		background-color: hsla(0, 100%, 100%, 0.05);
+	}
+	.timeline {
+		display: flex;
+		align-items: center;
+		height: 18px;
+	}
+	.timeline:hover {
+		background-color: hsla(0, 100%, 100%, 0.05);
 	}
 }

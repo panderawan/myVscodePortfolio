@@ -1,6 +1,6 @@
 .tabs {
 	box-sizing: border-box;
-	border: 1px solid hsla(0, 0%, 0%, 0.3);
+	border-right: 1px solid hsla(0, 0%, 0%, 0.3);
 
 	display: flex;
 	background-color: #161821;
@@ -14,7 +14,8 @@
 		fill: hsla(0, 100%, 100%, 0.4);
 	}
 	.icon:hover {
-		background-color: hsla(0, 100%, 100%, 0.1);
+		// background-color: hsla(0, 100%, 100%, 0.1);
+		fill: white;
 		border-left: 3px solid hsla(0, 100%, 100%, 1);
 		padding-left: 7px;
 	}
@@ -22,7 +23,9 @@
 		padding-top: 5px;
 	}
 	a:last-child {
-		padding-bottom: 5px;
+		svg {
+			padding-bottom: 3px;
+		}
 	}
 	a:nth-of-type(6) {
 		margin-top: auto;

@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import './explorer.styles.scss';
 import {
 	Ellipsis,
-	Chevron,
+	ChevronRight,
+	ChevronBottom,
 	homeIcon,
 	aboutIcon,
 	contactIcon,
@@ -45,9 +46,8 @@ const Explorer = () => {
 				<p>EXPLORER</p>
 				<Ellipsis className='ellipsis' />
 			</div>
-
-			<div className='portfolio'>
-				<Chevron className='chevron' />
+			<div className='category'>
+				<ChevronBottom className='chevron' />
 				<p>PORTFOLIO</p>
 			</div>
 
@@ -60,6 +60,16 @@ const Explorer = () => {
 						</div>
 					</Link>
 				))}
+			</div>
+			<div className='explorer-footer'>
+				<div className='outline'>
+					<ChevronRight className='chevron' />
+					<p>OUTLINE</p>
+				</div>
+				<div className='timeline'>
+					<ChevronRight className='chevron' />
+					<p>TIMELINE</p>
+				</div>
 			</div>
 		</div>
 	);
