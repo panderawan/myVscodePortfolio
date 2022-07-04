@@ -54,7 +54,7 @@ const Explorer = () => {
 			<div className='explorer-items'>
 				{explorerItems.map(({ name, path, Icon }) => (
 					<Link to={path} key={name}>
-						<div className='itemContainer'>
+						<div className='item-container'>
 							<Icon className='icon' />
 							<p className='name'>{name}</p>
 						</div>

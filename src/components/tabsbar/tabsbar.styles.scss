@@ -1,0 +1,48 @@
+.tabsbar-container {
+	display: flex;
+	height: 25px;
+	width: calc(100vw - 299px - 39.6167px);
+	background-color: hsla(0, 0%, 0%, 0.3);
+
+	.tabsbar-items {
+		display: flex;
+		align-items: center;
+		flex: 0.1;
+		background-color: #282a3a;
+
+		a:hover,
+		a:visited,
+		a:link,
+		a:active {
+			text-decoration: none;
+		}
+	}
+
+	.tabsbar-item-container {
+		display: flex;
+		align-items: center;
+		font-size: 0.7rem;
+		height: 23px;
+		margin: 0 15px;
+		box-sizing: border-box;
+		border-bottom: 1px solid hsla(100, 100%, 100%, 0.3);
+
+		.tabsbar-icon {
+			display: flex;
+			margin-right: 3px;
+		}
+		.tabsbar-name {
+			color: hsla(0, 100%, 100%, 0.6);
+		}
+	}
+	.tabsbar-item-container:hover {
+		border-bottom: 1px solid hsla(100, 100%, 100%, 0.6);
+	}
+}
+
+.tabsbar-container a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+}

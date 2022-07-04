@@ -3,7 +3,7 @@
 	height: calc(100vh - 29px - 19px);
 	background-color: #1e1f2b;
 	box-sizing: border-box;
-	border-right: 1px solid hsla(0, 0%, 0%, 0.3);
+	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
 
 	.header {
 		display: flex;
@@ -45,7 +45,7 @@
 		a:active {
 			text-decoration: none;
 		}
-		.itemContainer {
+		.item-container {
 			display: flex;
 			align-items: center;
 			font-size: 0.7rem;
@@ -64,7 +64,7 @@
 				}
 			}
 		}
-		.itemContainer:hover {
+		.item-container:hover {
 			background-color: hsla(0, 100%, 100%, 0.05);
 		}
 	}

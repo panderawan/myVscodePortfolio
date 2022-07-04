@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 import './sidebar.styles.scss'
 import {FileLogo, GithubIcon,AccountIcon,MailIcon, ProfileLogo, SettingsLogo } from '../icons/icons';
 
@@ -44,7 +44,6 @@ const Sidebar = () => {
 
                     </Link>))}
 			    </div>
-        <Outlet/>
         </>
 	);
 };

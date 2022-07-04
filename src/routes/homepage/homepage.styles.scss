@@ -1,0 +1,9 @@
+.homepage-container {
+	display: flex;
+	height: calc(100vh - 30px - 25px - 18px);
+	// background-color: blue;
+	.homepage-content {
+		padding-top: 10px;
+		display: flex;
+	}
+}
