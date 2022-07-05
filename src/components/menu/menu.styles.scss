@@ -34,7 +34,7 @@
 
 		*:hover {
 			cursor: pointer;
-			background-color: hsla(0, 100%, 100%, 0.1);
+			background-color: hsla(100, 100%, 100%, 0.1);
 			border-radius: 5px;
 		}
 	}
@@ -44,12 +44,12 @@
 		align-items: center;
 		justify-content: center;
 		font-size: 0.65rem;
-		color: hsla(0, 100%, 100%, 0.5);
+		color: hsla(100, 100%, 100%, 0.5);
 		margin: auto;
 	}
 
 	.icons {
-		color: hsla(0, 100%, 100%, 0.5);
+		color: hsla(100, 100%, 100%, 0.5);
 		display: flex;
 		flex: 1;
 		align-items: center;
@@ -65,7 +65,7 @@
 		}
 
 		:hover {
-			background-color: hsla(0, 100%, 100%, 0.1);
+			background-color: hsla(100, 100%, 100%, 0.1);
 		}
 		:last-child:hover {
 			background-color: red;

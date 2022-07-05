@@ -11,12 +11,12 @@
 	margin-top: -1px;
 	.icon {
 		padding: 10px;
-		fill: hsla(0, 100%, 100%, 0.4);
+		fill: hsla(100, 100%, 100%, 0.4);
 	}
 	.icon:hover {
-		// background-color: hsla(0, 100%, 100%, 0.1);
+		// background-color: hsla(100, 100%, 100%, 0.1);
 		fill: white;
-		border-left: 3px solid hsla(0, 100%, 100%, 1);
+		border-left: 3px solid hsla(100, 100%, 100%, 1);
 		padding-left: 7px;
 	}
 	a:first-child {

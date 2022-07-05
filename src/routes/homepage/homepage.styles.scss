@@ -1,9 +1,56 @@
 .homepage-container {
 	display: flex;
-	height: calc(100vh - 30px - 25px - 18px);
-	// background-color: blue;
-	.homepage-content {
-		padding-top: 10px;
+
+	font-family: 'Consolas';
+	position: relative;
+	height: 75vh;
+	justify-content: center;
+
+	.content {
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: hsla(100, 100%, 100%, 0.6);
+		align-items: center;
+	}
+
+	.name {
+		font-size: 10rem;
+		font-weight: 300;
+		margin-bottom: 0.5rem;
+		line-height: 1;
+	}
+	.activity {
+		width: max-content;
+		color: hsla(20, 96%, 69%, 1);
+		font-size: 8rem;
+		font-weight: 300;
+		margin-bottom: 3rem;
+		position: relative;
+	}
+	.buttons {
+		margin-top: 3rem;
+		width: 50vw;
+		display: flex;
+		justify-content: space-around;
+		button {
+			font-family: 'Consolas';
+			font-size: 3rem;
+			padding: 1rem 1.5rem;
+			margin-right: 3rem;
+			font-weight: 600;
+			width: 15vw;
+			border: none;
+			cursor: pointer;
+			background: hsla(100, 100%, 100%, 0.05);
+			border-radius: 1em;
+		}
+		a {
+			text-decoration: none;
+			color: hsla(100, 100%, 100%, 0.6);
+		}
+		button:hover {
+			background-color: hsla(20, 96%, 69%, 0.3);
+		}
 	}
 }

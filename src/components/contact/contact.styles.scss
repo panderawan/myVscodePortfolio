@@ -1,0 +1,35 @@
+.contacts-container {
+	counter-reset: line;
+	font-size: 1.5rem;
+	line-height: 0.7rem;
+	font-family: "Consolas";
+
+	.line {
+		color: hsla(100, 100%, 100%, 0.8);
+		font-size: 1em;
+	}
+	.line::before {
+		content: counter(line);
+		counter-increment: line;
+		margin-right: 2rem;
+		color: hsla(100, 100%, 100%, 0.2);
+	}
+
+	.social {
+		margin-left: 0;
+		color: rgb(169, 220, 118);
+	}
+
+	a {
+		color: rgb(169, 220, 118);
+		text-decoration: none;
+		margin-left: 1rem;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+
+	p {
+		margin-left: 1.2em;
+	}
+}

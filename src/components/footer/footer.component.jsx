@@ -8,8 +8,12 @@ const Footer = () => {
 				<div className='footer-links'>
 					<nav className="footerLeft">
 						<li className="gitMain">
-							<GitRepo />
-							main*
+							<a href="http://github.com/panderawan">
+								<GitRepo />
+								main*
+							</a>
+
+
 						</li>
 						<li className="crossWarning">
 							<CrossGit />

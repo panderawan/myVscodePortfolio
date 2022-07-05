@@ -5,7 +5,7 @@ import {FileLogo, GithubIcon,AccountIcon,MailIcon, ProfileLogo, SettingsLogo } f
 const sidebarItems = [
     {
         Icon: AccountIcon,
-        path: '/1'
+        path: '/'
     },
     {
         Icon: GithubIcon,
@@ -17,7 +17,7 @@ const sidebarItems = [
     },
     {
         Icon: MailIcon,
-        path: '/4'
+        path: '/contact'
     },
     {
         Icon: FileLogo,

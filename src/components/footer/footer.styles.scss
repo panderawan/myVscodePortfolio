@@ -27,6 +27,12 @@
 				svg {
 					margin-right: 4px;
 				}
+				a {
+					display: flex;
+					justify-content: center;
+					text-decoration: none;
+					color: rgba(255, 255, 255, 0.43);
+				}
 			}
 			.crossWarning {
 				display: flex;
@@ -43,7 +49,7 @@
 
 			li:hover {
 				cursor: pointer;
-				background-color: hsla(0, 100%, 100%, 0.05);
+				background-color: hsla(100, 100%, 100%, 0.05);
 			}
 		}
 	}
@@ -62,7 +68,7 @@
 		}
 		.prettierBelt:hover {
 			cursor: pointer;
-			background-color: hsla(0, 100%, 100%, 0.05);
+			background-color: hsla(100, 100%, 100%, 0.05);
 		}
 		.bell {
 			display: flex;
@@ -70,7 +76,7 @@
 
 			:hover {
 				cursor: pointer;
-				background-color: hsla(0, 100%, 100%, 0.05);
+				background-color: hsla(100, 100%, 100%, 0.05);
 			}
 		}
 		.bell svg {

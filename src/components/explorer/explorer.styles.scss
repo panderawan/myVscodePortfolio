@@ -12,17 +12,17 @@
 		height: 25px;
 		font-size: 0.7em;
 		font-weight: normal;
-		color: hsla(0, 100%, 100%, 0.1);
+		color: hsla(100, 100%, 100%, 0.1);
 
 		.ellipsis {
 			display: flex;
 			margin-left: auto;
 			margin-right: 8px;
-			color: hsla(0, 100%, 100%, 0.4);
+			color: hsla(100, 100%, 100%, 0.4);
 			padding: 2px 3px;
 		}
 		.ellipsis:hover {
-			background-color: hsla(0, 100%, 100%, 0.1);
+			background-color: hsla(100, 100%, 100%, 0.1);
 			border-radius: 5px;
 			cursor: pointer;
 		}
@@ -30,12 +30,12 @@
 	.category {
 		display: flex;
 		align-items: center;
-		color: hsla(0, 100%, 100%, 0.4);
+		color: hsla(100, 100%, 100%, 0.4);
 		font-size: 0.7em;
 		font-weight: 700;
 		cursor: pointer;
 		.chevron {
-			color: hsla(0, 100%, 100%, 0.6);
+			color: hsla(100, 100%, 100%, 0.6);
 		}
 	}
 	.explorer-items {
@@ -58,20 +58,20 @@
 				display: flex;
 				text-decoration: none;
 				margin-left: 5px;
-				color: hsla(0, 100%, 100%, 0.6);
+				color: hsla(100, 100%, 100%, 0.6);
 				.name:hover {
 					background-color: red;
 				}
 			}
 		}
 		.item-container:hover {
-			background-color: hsla(0, 100%, 100%, 0.05);
+			background-color: hsla(100, 100%, 100%, 0.05);
 		}
 	}
 	.explorer-footer {
 		display: flex;
 		flex-direction: column;
-		color: hsla(0, 100%, 100%, 0.4);
+		color: hsla(100, 100%, 100%, 0.4);
 		font-size: 0.6em;
 		font-weight: 700;
 		cursor: pointer;
@@ -84,7 +84,7 @@
 		height: 18px;
 	}
 	.outline:hover {
-		background-color: hsla(0, 100%, 100%, 0.05);
+		background-color: hsla(100, 100%, 100%, 0.05);
 	}
 	.timeline {
 		display: flex;
@@ -92,6 +92,6 @@
 		height: 18px;
 	}
 	.timeline:hover {
-		background-color: hsla(0, 100%, 100%, 0.05);
+		background-color: hsla(100, 100%, 100%, 0.05);
 	}
 }

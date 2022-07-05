@@ -32,17 +32,10 @@
 			margin-right: 3px;
 		}
 		.tabsbar-name {
-			color: hsla(0, 100%, 100%, 0.6);
+			color: hsla(100, 100%, 100%, 0.6);
 		}
 	}
 	.tabsbar-item-container:hover {
 		border-bottom: 1px solid hsla(100, 100%, 100%, 0.6);
 	}
-}
-
-.tabsbar-container a:hover,
-a:visited,
-a:link,
-a:active {
-	text-decoration: none;
 }
