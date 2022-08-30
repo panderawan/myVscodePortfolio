@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom'
 import './projects.styles.scss';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 // import mailLogo from '../../assets/mail.gif'
