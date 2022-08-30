@@ -1,0 +1,62 @@
+.projects-container {
+	display: flex;
+	font-family: 'Consolas';
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+
+	.projects-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: hsla(100, 100%, 100%, 0.8);
+	}
+
+	.projectsName {
+		display: flex;
+		width: max-content;
+		font-size: 10.5em;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+		line-height: 1;
+	}
+	.projectsActivity {
+		display: flex;
+		width: max-content;
+		color: hsla(20, 96%, 69%, 1);
+		font-size: 6rem;
+		font-weight: 300;
+		margin-bottom: 3rem;
+		span:nth-child(2) {
+			display: flex;
+			width: 0;
+		}
+	}
+	@media (max-width: 1280px) {
+		.projectsName {
+			font-size: 6em;
+		}
+		.projectsActivity {
+			font-size: 4em;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.projectsName {
+			font-size: 4em;
+		}
+		.projectsActivity {
+			font-size: 2em;
+		}
+	}
+
+	@media (max-width: 300px) {
+		.projectsName {
+			font-size: 2rem;
+		}
+		.projectsActivity {
+			font-size: 1rem;
+		}
+	}
+}

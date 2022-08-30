@@ -1,4 +1,4 @@
-.tabs {
+.sideTabs {
 	box-sizing: border-box;
 	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
 
@@ -9,25 +9,29 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: -1px;
+
+	.active {
+		.icon {
+			fill: hsla(100, 100%, 100%, 0.7);
+			border-left: 3px solid hsla(100, 100%, 100%, 0.7);
+			padding-left: 7px;
+		}
+	}
 	.icon {
 		padding: 10px;
 		fill: hsla(100, 100%, 100%, 0.4);
 	}
 	.icon:hover {
 		// background-color: hsla(100, 100%, 100%, 0.1);
-		fill: white;
-		border-left: 3px solid hsla(100, 100%, 100%, 1);
-		padding-left: 7px;
+		fill: hsla(100, 100%, 100%, 0.7);
 	}
-	a:first-child {
-		padding-top: 5px;
-	}
-	a:last-child {
-		svg {
-			padding-bottom: 3px;
-		}
-	}
+	// a:first-child {
+	// 	padding-top: 5px;
+	// }
 	a:nth-of-type(6) {
 		margin-top: auto;
 	}
+	// @media (max-width: 576px) {
+	// 	display: none;
+	// }
 }

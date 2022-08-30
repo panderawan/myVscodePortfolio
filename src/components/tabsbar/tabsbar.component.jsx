@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './tabsbar.styles.scss';
 import {
 	homeIcon,
@@ -39,16 +39,14 @@ const tabsbarItems = [
 const Tabsbar = () => {
 	return (
 		<div className='tabsbar-container'>
-			<div className='tabsbar-items'>
-				{tabsbarItems.map(({ name, path, Icon }) => (
-					<Link to={path} key={name}>
-						<div className='tabsbar-item-container'>
-							<Icon className='tabsbar-icon' />
-							<p className='tabsbar-name'>{name}</p>
-						</div>
-					</Link>
-				))}
-			</div>
+			{tabsbarItems.map(({ name, path, Icon }) => (
+				<NavLink to={path} key={name}>
+					<div className='tabsbar-item-container'>
+						<Icon className='tabsbar-icon' />
+						<p className='tabsbar-name'>{name}</p>
+					</div>
+				</NavLink>
+			))}
 		</div>
 	);
 };

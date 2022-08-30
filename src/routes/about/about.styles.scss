@@ -1,11 +1,11 @@
-.homepage-container {
+.about-container {
 	display: flex;
 	font-family: 'Consolas';
 	height: 100%;
 	width: 100%;
 	justify-content: center;
 
-	.content {
+	.aboutContent {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -13,7 +13,7 @@
 		color: hsla(100, 100%, 100%, 0.8);
 	}
 
-	.myName {
+	.aboutName {
 		display: flex;
 		width: max-content;
 		font-size: 10.5em;
@@ -21,7 +21,7 @@
 		margin-bottom: 0.5rem;
 		line-height: 1;
 	}
-	.activity {
+	.aboutActivity {
 		display: flex;
 		width: max-content;
 		color: hsla(20, 96%, 69%, 1);
@@ -62,60 +62,61 @@
 	}
 
 	@media (max-width: 1280px) {
-		.myName {
+		.aboutName {
 			font-size: 6em;
 		}
-		.activity {
+		.aboutActivity {
 			font-size: 4em;
-		}
-		.buttons button {
-			font-size: 3rem;
-			width: 250px;
-			height: 150px;
 		}
 	}
 
-	@media (max-width: 1000px) {
-		.myName {
-			font-size: 6em;
-		}
-		.activity {
+	@media (max-width: 768px) {
+		.aboutName {
 			font-size: 4em;
 		}
-
-		.buttons {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 0;
-			button {
-				margin: 25px;
-				width: 300px;
-				height: 100px;
-			}
+		.aboutActivity {
+			font-size: 2em;
 		}
 	}
 
-	@media (max-width: 414px) {
-		.myName {
-			font-size: 3rem;
+	@media (max-width: 300px) {
+		.aboutName {
+			font-size: 2rem;
 		}
-		.activity {
-			font-size: 1.5rem;
-		}
-		.buttons {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin-top: 0;
-			button {
-				font-size: 2rem;
-				margin: 25px auto;
-				align-items: center;
-				width: 250px;
-				height: 100px;
-			}
+		.aboutActivity {
+			font-size: 1rem;
 		}
 	}
 }
+
+// @media (max-width: 768px) {
+// 	.aboutName {
+// 		font-size: 6em;
+// 	}
+// 	.aboutActivity {
+// 		font-size: 3em;
+// 	}
+// 	.buttons {
+// 		display: flex;
+// 		flex-direction: row;
+// 		justify-content: center;
+// 		align-items: center;
+// 		margin-top: 0;
+// 		button {
+
+// 		}
+// 	}
+// }
+
+// @media (max-width: 768px) {
+
+// }
+
+// @media (max-width: 1400px) {
+// 	.aboutName {
+// 		font-size: 8rem;
+// 	}
+// 	.aboutActivity {
+// 		font-size: 5rem;
+// 	}
+// }

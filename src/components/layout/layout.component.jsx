@@ -14,9 +14,8 @@ const Layout = () => {
                 <div className="main">
                     <Sidebar />
                 <Explorer />
-
-                <div>
-                    <Tabsbar />
+                <div className="outlet">
+                <Tabsbar />
                     <Outlet/>
                 </div>
                 </div>

@@ -1,4 +1,10 @@
 .main {
+	width: 100%;
 	display: flex;
 	background-color: #282a3a;
+}
+
+.outlet {
+	flex: 1;
+	overflow: hidden;
 }

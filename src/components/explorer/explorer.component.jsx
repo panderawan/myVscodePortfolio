@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './explorer.styles.scss';
 import {
 	Ellipsis,
@@ -51,16 +51,16 @@ const Explorer = () => {
 				<p>PORTFOLIO</p>
 			</div>
 
-			<div className='explorer-items'>
+			<nav className='explorer-items'>
 				{explorerItems.map(({ name, path, Icon }) => (
-					<Link to={path} key={name}>
+					<NavLink to={path} key={name}>
 						<div className='item-container'>
 							<Icon className='icon' />
-							<p className='name'>{name}</p>
+							<p className='itemName'>{name}</p>
 						</div>
-					</Link>
+					</NavLink>
 				))}
-			</div>
+			</nav>
 			<div className='explorer-footer'>
 				<div className='outline'>
 					<ChevronRight className='chevron' />

@@ -1,9 +1,12 @@
 .explorer-container {
-	width: 300px;
+	width: 150px;
 	height: calc(100vh - 29px - 19px);
 	background-color: #1e1f2b;
 	box-sizing: border-box;
 	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+	position: relative;
+	display: flex;
+	flex-direction: column;
 
 	.header {
 		display: flex;
@@ -41,9 +44,11 @@
 	.explorer-items {
 		a:hover,
 		a:visited,
-		a:link,
-		a:active {
+		a:link {
 			text-decoration: none;
+		}
+		.active .item-container {
+			background-color: hsla(100, 100%, 100%, 0.05);
 		}
 		.item-container {
 			display: flex;
@@ -54,12 +59,12 @@
 				display: flex;
 				margin-left: 15px;
 			}
-			.name {
+			.itemName {
 				display: flex;
 				text-decoration: none;
 				margin-left: 5px;
 				color: hsla(100, 100%, 100%, 0.6);
-				.name:hover {
+				.itemName:hover {
 					background-color: red;
 				}
 			}
@@ -68,30 +73,39 @@
 			background-color: hsla(100, 100%, 100%, 0.05);
 		}
 	}
+	.explorer-items a:active {
+		background-color: red;
+	}
 	.explorer-footer {
 		display: flex;
-		flex-direction: column;
+		justify-content: flex-end;
+		height: 100%;
 		color: hsla(100, 100%, 100%, 0.4);
 		font-size: 0.6em;
 		font-weight: 700;
-		cursor: pointer;
-		height: 1110.6px;
+		flex-direction: column;
+		flex-grow: 1;
 	}
-	.outline {
-		margin-top: auto;
+	.outline,
+	.timeline {
+		cursor: pointer;
 		display: flex;
 		align-items: center;
-		height: 18px;
+		line-height: 0.5;
+		.chevron {
+			display: flex;
+			align-items: center;
+		}
 	}
 	.outline:hover {
 		background-color: hsla(100, 100%, 100%, 0.05);
 	}
-	.timeline {
-		display: flex;
-		align-items: center;
-		height: 18px;
-	}
+
 	.timeline:hover {
 		background-color: hsla(100, 100%, 100%, 0.05);
+	}
+
+	@media (max-width: 1000px) {
+		display: none;
 	}
 }

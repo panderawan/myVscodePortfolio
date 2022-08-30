@@ -1,6 +1,8 @@
-import {Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './sidebar.styles.scss'
 import {FileLogo, GithubIcon,AccountIcon,MailIcon, ProfileLogo, SettingsLogo } from '../icons/icons';
+
+// const pathname = window.location.pathname
 
 const sidebarItems = [
     {
@@ -8,12 +10,8 @@ const sidebarItems = [
         path: '/'
     },
     {
-        Icon: GithubIcon,
-        path: '/2'
-    },
-    {
         Icon: FileLogo,
-        path: '/3'
+        path: '/about'
     },
     {
         Icon: MailIcon,
@@ -21,28 +19,28 @@ const sidebarItems = [
     },
     {
         Icon: FileLogo,
-        path: '/5'
+        path: '/projects'
+    },
+    {
+        Icon: GithubIcon,
+        path: '/github'
     },
     {
         Icon: ProfileLogo,
-        path:'/6'
+        path: '6'
     },
     {
         Icon: SettingsLogo,
-        path:'/7'
+        path:'7'
     }
 ]
 const Sidebar = () => {
     return (
         <>
-                <div className='tabs'>
-                {sidebarItems.map(({ Icon, path }) => (<Link to={path} key={path}>
-                    <div className="iconContainer">
+                <div className='sideTabs'>
+                {sidebarItems.map(({ Icon, path }) => (<NavLink to={path} key={path}>
                     <Icon className="icon"/>
-                        </div>
-
-
-                    </Link>))}
+                    </NavLink>))}
 			    </div>
         </>
 	);
