@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom'
+
+import { useNavigate } from 'react-router-dom';
 import './homepage.styles.scss'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useEffect } from 'react';
 
 export const Homepage = () => {
 	
 	const {text} = useTypewriter({
 		words: ['Développeur Web'],
-	  })
+	})
+	const navigate = useNavigate();
 	return (
 		<>
 			<div className='homepage-container'>
@@ -24,16 +27,16 @@ export const Homepage = () => {
 							<Cursor/>
 						</div>
 						<div className="buttons">
-							<button>
-								<a href="https://www.github.com/Panderawan">GITHUB</a>
+							<button onClick={() => window.location.replace("https://google.com")}>
+								GITHUB
 							</button>
-							<button>
+							<button onClick={() => window.location.replace("https://www.linkedin.com/in/ruddyautem/")}>
 							{/* <img src={mailLogo}/> */}
-							<a href="https://www.linkedin.com/in/ruddyautem/">LINKEDIN</a>
+							LINKEDIN
 							</button>
-						<button>
+						<button onClick={() => navigate('/contact')}>
 							{/* <img src={mailLogo}/> */}
-								<Link to="/contact">CONTACT</Link>
+								CONTACT
 							</button>
 
 						</div>

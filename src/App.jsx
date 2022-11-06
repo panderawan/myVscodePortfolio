@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './routes/homepage/homepage.component';
 import About from './routes/about/about.component';
 import Layout from './components/layout/layout.component';
@@ -9,6 +9,7 @@ import Github from './routes/github/github.component';
 
 function App() {
 	return (
+		<BrowserRouter>
 		<Routes>
 			<Route path='/' element={<Layout />}>
 				<Route index element={<Homepage />} />
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/github' element={<Github />} />
 			</Route>
 		</Routes>
+		</BrowserRouter>
 	);
 }
 

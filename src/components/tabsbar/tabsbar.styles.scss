@@ -12,10 +12,10 @@
 		text-decoration: none;
 	}
 	.active {
-		border-bottom: 1px solid hsla(40, 100%, 70%, 100);
+		border-bottom: 1px solid hsl(40, 100%, 70%);
 		.tabsbar-name {
 			display: flex;
-			color: hsla(40, 105, 70, 1);
+			color: hsl(40, 10%, 70%)
 		}
 	}
 	.tabsbar-item-container {
@@ -30,7 +30,7 @@
 			margin-right: 3px;
 		}
 		.tabsbar-name {
-			color: hsla(100, 100%, 100%, 0.6);
+			color: hsl(100, 100%, 100%, 0.6);
 		}
 	}
 	// @media (max-width: 576px) {
