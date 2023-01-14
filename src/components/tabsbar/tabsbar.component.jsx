@@ -3,7 +3,7 @@ import {
   contactIcon,
   githubIcon,
   homeIcon,
-  projectsIcon
+  projectsIcon,
 } from './../icons/icons';
 
 import { NavLink } from 'react-router-dom';
@@ -41,14 +41,12 @@ const Tabsbar = () => {
   return (
     <TabsbarContainer>
       {tabsbarItems.map(({ name, path, Icon }) => (
-        <NavLink to={path} key={name}>
-          <TabsbarItem>
-            <TabsbarIcon>
-              <Icon />
-            </TabsbarIcon>
-            <p>{name}</p>
-          </TabsbarItem>
-        </NavLink>
+        <StyledNavLink to={path} key={name}>
+          <TabsbarIcon>
+            <Icon />
+          </TabsbarIcon>
+          <p>{name}</p>
+        </StyledNavLink>
       ))}
     </TabsbarContainer>
   );
@@ -66,7 +64,14 @@ const TabsbarContainer = styled.div`
   }
 `;
 
-const TabsbarItem = styled.div`
+const TabsbarIcon = styled.div`
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const StyledNavLink = styled(NavLink)`
   display: flex;
   align-items: center;
 
@@ -76,13 +81,7 @@ const TabsbarItem = styled.div`
   box-sizing: border-box;
   height: 23px;
   position: relative;
-  ${NavLink}.active & {
+  &.active {
     border-bottom: 0.5px solid hsl(40, 100%, 70%);
   }
-`;
-const TabsbarIcon = styled.div`
-  margin-right: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;

@@ -1,4 +1,4 @@
-import { ReactComponent as VscLogo } from '../../assets/vsclogo.svg';
+import VscLogo from '../../assets/vsclogo.svg';
 import { Minimize, Restore, Close } from '../icons/icons';
 import styled from 'styled-components';
 
@@ -17,7 +17,7 @@ const Menu = () => {
   return (
     <MenuContainer>
       <MenuLinks>
-        <VscLogo />
+        <img src={VscLogo} alt="" />
         {menuItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
