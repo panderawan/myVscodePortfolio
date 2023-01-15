@@ -4,23 +4,34 @@ import Menu from '../menu/menu.component';
 import Sidebar from './../sidebar/sidebar.component';
 import Footer from './../footer/footer.component';
 import Tabsbar from './../tabsbar/tabsbar.component';
-import './layout.styles.scss';
+import styled from 'styled-components';
 
 const Layout = () => {
   return (
     <>
       <Menu />
-      <div className='main'>
+      <StyledMain>
         <Sidebar />
         <Explorer />
-        <div className='outlet'>
+        <StyledOutlet>
           <Tabsbar />
           <Outlet />
-        </div>
-      </div>
+        </StyledOutlet>
+      </StyledMain>
       <Footer />
     </>
   );
 };
 
 export default Layout;
+
+const StyledMain = styled.div`
+  width: 100%;
+  display: flex;
+  background-color: #282a3a;
+`;
+
+const StyledOutlet = styled.div`
+  flex: 1;
+  overflow: hidden;
+`;

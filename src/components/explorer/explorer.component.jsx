@@ -84,6 +84,8 @@ const ExplorerContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  cursor: default;
+  user-select: none;
   @media (max-width: 1000px) {
     display: none;
   }
