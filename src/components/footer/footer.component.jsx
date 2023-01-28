@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
   return (
-    <>
-      <FooterContainer>
+    <FooterContainer>
         <LeftFooterNav>
           <FooterLi>
             <a href='http://github.com/panderawan'>
@@ -30,8 +29,7 @@ const Footer = () => {
             <Bell />
           </FooterLi>
         </RightFooterNav>
-      </FooterContainer>
-    </>
+    </FooterContainer>
   );
 };
 
@@ -44,9 +42,11 @@ const FooterContainer = styled.div`
   color: rgba(255, 255, 255, 0.43);
   box-sizing: border-box;
   border-top: 1px solid hsla(0, 0%, 0%, 0.3);
+  position: absolute;
+  bottom: 0;
+  width:100%;
   height: 18px;
   flex: 1;
-  list-style: none;
   & svg {
     transform: scale(0.9);
   }
@@ -84,5 +84,4 @@ const LeftFooterNav = styled(FooterNav)`
 
 const RightFooterNav = styled(FooterNav)`
   justify-content: flex-end;
-  padding-right: 0px;
 `;

@@ -25,7 +25,7 @@ export default Github;
 const GithubContainer = styled.div`
   display: flex;
   font-family: 'Consolas';
-  height: 100%;
+  height: calc(100% - 25px - 30px);
   width: 100%;
   flex-direction: column;
   justify-content: center;

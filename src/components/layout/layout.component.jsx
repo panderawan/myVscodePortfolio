@@ -26,12 +26,17 @@ const Layout = () => {
 export default Layout;
 
 const StyledMain = styled.div`
-  width: 100%;
   display: flex;
   background-color: #282a3a;
+  overflow: hidden;
 `;
 
 const StyledOutlet = styled.div`
-  flex: 1;
-  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 30px - 18px);
+  width: 100%;
+  &::-webkit-scrollbar {
+    width: 0.4em;
+    background-color: #f5f5f5;
+  }
 `;

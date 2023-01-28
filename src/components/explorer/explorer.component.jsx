@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import {
@@ -40,24 +41,27 @@ const explorerItems = [
 ];
 
 const Explorer = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <ExplorerContainer>
       <Header>
         <p>EXPLORER</p>
         <Ellipsis />
       </Header>
-      <Category>
-        <ChevronBottom />
+      <Category onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? <ChevronBottom /> : <ChevronRight />}
         <p>PORTFOLIO</p>
       </Category>
 
       <ExplorerItems>
-        {explorerItems.map(({ name, path, Icon }) => (
-          <StyledNavLink to={path} key={name}>
-            <Icon />
-            <p>{name}</p>
-          </StyledNavLink>
-        ))}
+        {isOpen &&
+          explorerItems.map(({ name, path, Icon }) => (
+            <StyledNavLink to={path} key={name}>
+              <Icon />
+              <p>{name}</p>
+            </StyledNavLink>
+          ))}
       </ExplorerItems>
       <ExplorerFooter>
         <FooterLink>
@@ -76,7 +80,7 @@ const Explorer = () => {
 export default Explorer;
 
 const ExplorerContainer = styled.div`
-  width: 150px;
+  width: 250px;
   height: calc(100vh - 29px - 19px);
   background-color: #1e1f2b;
   box-sizing: border-box;
