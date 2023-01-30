@@ -21,36 +21,35 @@
       "material-ui",
       "axios"
     ],
-    "source": "https://github.com",
+    "source": "https://github.com/panderawan/E-Commerce",
     "demo": "ecommerce.autem.dev"
   },
   {
     "id": 3,
     "name": "Slack Clone",
     "image": "slack.png",
-    "description": "Clone fonctionnel de Slack. Connectez-vous avec votre compte Google pour y accéder et laissez un message :)",
+    "description": "Clone fonctionnel de Slack. Une fois connecté, Entrez sur un canal de discussion et laissez un message!",
     "tags": ["react", "redux", "styled-components", "firebase"],
     "source": "",
     "demo": "slack.gpt3.dev"
   },
   {
     "id": 4,
+    "name": "Gmail Clone",
+    "image": "/gmail.png",
+    "description": "Clone fonctionnel de Gmail. Une fois connecté, Rédigez un nouveau mail pour qu'il s'ajoute à la liste!",
+    "tags": ["react", "styled-components"],
+    "source": "https://github.com/panderawan/GmailClone",
+    "demo": "gmail.autem.dev"
+  },
+  {
+    "id": 5,
     "name": "GPT-3",
     "image": "gpt3.png",
     "description": "description",
     "tags": ["react"],
     "source": "",
     "demo": "gpt3.autem.dev"
-  }
-  ,
-  {
-    "id": 5,
-    "name": "Portfolio VSCode",
-    "image": "/vscodeportfolio.png",
-    "description": "description",
-    "tags": ["react", "styled-components"],
-    "source": "https://github.com/panderawan/myVscodePortfolio",
-    "demo": "ruddy.autem.dev"
   },
   {
     "id": 6,
