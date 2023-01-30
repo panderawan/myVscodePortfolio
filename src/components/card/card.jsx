@@ -48,6 +48,7 @@ const CardContainer = styled.div`
   border-radius: 25px;
   text-align: center;
   padding: 0 10px;
+
   > img {
     margin-top: 10px;
     height: 300px;
@@ -75,6 +76,9 @@ const CardContent = styled.div`
   > h2 {
     margin-bottom: 0px;
   }
+  > p {
+    font-size: 15px;
+  }
 `;
 const ProjectTag = styled.div`
   display: flex;
@@ -82,6 +86,7 @@ const ProjectTag = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 5px 15px;
+  /* margin-top: auto; */
 `;
 
 const Tag = styled.span`
@@ -95,6 +100,7 @@ const Tag = styled.span`
   border-radius: 5px;
   padding: 2px 8px;
   margin: 3px;
+
   transition: background-color 0.2s ease-in-out;
   &:hover {
     background-color: ${(props) =>
@@ -106,5 +112,9 @@ const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: auto;
+  > button {
+    margin: 0 3px;
+  }
 `;

@@ -12,7 +12,7 @@
     "id": 2,
     "name": "E-Commerce",
     "image": "ecommerce.png",
-    "description": "Plateforme d'E-Commerce fonctionnelle,  ",
+    "description": "Plateforme d'E-Commerce fonctionnelle. Ajoutez vos articles dans le panier et payez avec Stripe!",
     "tags": [
       "react",
       "redux",
@@ -28,59 +28,39 @@
     "id": 3,
     "name": "Slack Clone",
     "image": "slack.png",
-    "description": "Clone fonctionnel de Slack. Une fois connecté, Entrez sur un canal de discussion et laissez un message!",
+    "description": "Clone fonctionnel de Slack. Une fois votre compte créé, Entrez sur un canal de discussion et laissez un message!",
     "tags": ["react", "redux", "styled-components", "firebase"],
-    "source": "",
+    "source": "https://github.com/panderawan/SlackClone",
     "demo": "slack.gpt3.dev"
   },
   {
     "id": 4,
     "name": "Gmail Clone",
     "image": "/gmail.png",
-    "description": "Clone fonctionnel de Gmail. Une fois connecté, Rédigez un nouveau mail pour qu'il s'ajoute à la liste!",
+    "description": "Clone fonctionnel de Gmail. Une fois votre compte créé, Rédigez un nouveau mail qui s'ajoutera à la liste!",
     "tags": ["react", "styled-components"],
     "source": "https://github.com/panderawan/GmailClone",
     "demo": "gmail.autem.dev"
   },
   {
     "id": 5,
-    "name": "GPT-3",
-    "image": "gpt3.png",
-    "description": "description",
-    "tags": ["react"],
-    "source": "",
-    "demo": "gpt3.autem.dev"
-  },
-  {
-    "id": 6,
-    "name": "E-Commerce",
-    "image": "ecommerce.png",
-    "description": "description",
+    "name": "LinkedIn Clone", 
+    "image": "linkedin.png",
+    "description": "Clone fonctionnel de LinkedIn. Une fois votre compte créé, écrivez un article qui s'ajoutera à ceux déjà présents!",
     "tags": [
       "react",
       "redux",
-      "styled-components",
-      "mysql",
       "material-ui",
-      "axios"
+      "firebase"
     ],
-    "source": "",
-    "demo": "ecommerce.autem.dev"
+    "source": "https://github.com/panderawan/linkedinClone",
+    "demo": "linkedin.autem.dev"
   },
   {
-    "id": 7,
-    "name": "Slack Clone",
-    "image": "slack.png",
-    "description": "description",
-    "tags": ["react", "redux", "styled-components", "firebase"],
-    "source": "",
-    "demo": "slack.gpt3.dev"
-  },
-  {
-    "id": 8,
+    "id": 6,
     "name": "GPT-3",
     "image": "gpt3.png",
-    "description": "description",
+    "description": "Page d'Accueil d'une plateforme de tutoriel d'utilisation de GPT3",
     "tags": ["react"],
     "source": "",
     "demo": "gpt3.autem.dev"
