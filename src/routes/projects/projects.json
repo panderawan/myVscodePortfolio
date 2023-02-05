@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "Portfolio VSCode",
-    "image": "/vscodeportfolio.png",
+    "image": "vscodeportfolio.png",
     "description": "Mon portfolio aux couleurs de VsCode. Souriez, vous-êtes ici :)",
     "tags": ["react", "styled-components"],
     "source": "https://github.com/panderawan/myVscodePortfolio",
-    "demo": "ruddy.autem.dev"
+    "demo": "https://ruddy.autem.dev"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
       "axios"
     ],
     "source": "https://github.com/panderawan/E-Commerce",
-    "demo": "ecommerce.autem.dev"
+    "demo": "https://ecommerce.autem.dev"
   },
   {
     "id": 3,
@@ -31,16 +31,16 @@
     "description": "Clone fonctionnel de Slack. Une fois votre compte créé, Entrez sur un canal de discussion et laissez un message!",
     "tags": ["react", "redux", "styled-components", "firebase"],
     "source": "https://github.com/panderawan/SlackClone",
-    "demo": "slack.gpt3.dev"
+    "demo": "https://slack.autem.dev"
   },
   {
     "id": 4,
     "name": "Gmail Clone",
-    "image": "/gmail.png",
+    "image": "gmail.png",
     "description": "Clone fonctionnel de Gmail. Une fois votre compte créé, Rédigez un nouveau mail qui s'ajoutera à la liste!",
     "tags": ["react", "styled-components"],
     "source": "https://github.com/panderawan/GmailClone",
-    "demo": "gmail.autem.dev"
+    "demo": "https://gmail.autem.dev"
   },
   {
     "id": 5,
@@ -54,7 +54,7 @@
       "firebase"
     ],
     "source": "https://github.com/panderawan/linkedinClone",
-    "demo": "linkedin.autem.dev"
+    "demo": "https://linkedin.autem.dev"
   },
   {
     "id": 6,
@@ -62,7 +62,7 @@
     "image": "gpt3.png",
     "description": "Page d'Accueil d'une plateforme de tutoriel d'utilisation de GPT3",
     "tags": ["react"],
-    "source": "",
-    "demo": "gpt3.autem.dev"
+    "source": "https://github.com/panderawan/gpt3",
+    "demo": "https://gpt3.autem.dev"
   }
 ]

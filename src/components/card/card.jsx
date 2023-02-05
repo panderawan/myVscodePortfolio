@@ -17,7 +17,10 @@ const Card = ({ project }) => {
         </ProjectTag>
       </CardContent>
       <ButtonsContainer>
-        <Button name='DEMO' />
+        <Button
+          name='DEMO'
+          onClick={() => (window.location.href = project.demo)}
+        />
         <Button
           name='CODE SOURCE'
           onClick={() => (window.location.href = project.source)}
