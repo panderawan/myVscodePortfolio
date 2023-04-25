@@ -30,7 +30,7 @@ const GithubContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: hsla(100, 100%, 100%, 0.8);
+  color: var(--pf-almostwhite);
 `;
 
 const GithubName = styled.div`
@@ -55,7 +55,7 @@ const GithubName = styled.div`
 const GithubActivity = styled.div`
   display: flex;
   justify-content: center;
-  color: hsl(20, 96%, 69%);
+  color: var(--pf-orange);
   font-size: 6rem;
   font-weight: 300;
   margin-bottom: 3rem;

@@ -57,13 +57,11 @@ export default Tabsbar;
 const TabsbarContainer = styled.div`
   display: flex;
   height: 25px;
-  width: 100%;
   align-items: center;
   overflow-y: hidden;
-  position: fixed;
-  overflow-y: scroll;
+  position: sticky;
   background-color: #282a3a;
-  z-index: 1;
+  z-index: 999;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -72,7 +70,7 @@ const StyledNavLink = styled(NavLink)`
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
-  color: hsla(100, 100%, 100%, 0.6);
+  color: var(--pf-lightwhite);
   box-sizing: border-box;
   height: 23px;
   min-width: 90px;
@@ -85,7 +83,7 @@ const StyledNavLink = styled(NavLink)`
       left: 0;
       right: 0;
       height: 5%;
-      background: hsl(40, 100%, 70%);
+      background: var(--pf-yellow);
     }
   }
 `;

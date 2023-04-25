@@ -19,7 +19,7 @@ export default Projects;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
   margin: 1.5rem 0;
   @media (max-width: 420px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

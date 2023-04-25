@@ -48,8 +48,7 @@ const ContactsContainer = styled.div`
   font-family: 'Consolas';
 
   & a {
-    color: rgb(169, 220, 118);
-    text-decoration: none;
+    color: var(--pf-yellow);
     margin-left: 1rem;
   }
   & a:hover {
@@ -70,7 +69,7 @@ const ContactsContainer = styled.div`
 `;
 
 const Line = styled.p`
-  color: hsla(100, 100%, 100%, 0.8);
+  color: var(--pf-almostwhite);
   font-size: 1em;
   &::before {
     content: counter(line);
@@ -82,5 +81,5 @@ const Line = styled.p`
 
 const Social = styled.span`
   margin-left: 0;
-  color: rgb(169, 220, 118);
+  color: var(--pf-yellow);
 `;

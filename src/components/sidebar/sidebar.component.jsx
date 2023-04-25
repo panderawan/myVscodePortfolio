@@ -62,7 +62,7 @@ export default Sidebar;
 
 const SideTabsContainer = styled.div`
   box-sizing: border-box;
-  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-right: 1px solid var(--pf-lightdark);
   display: flex;
   background-color: #161821;
   height: calc(100vh - 30px - 17px);
@@ -76,8 +76,8 @@ const SideTabsContainer = styled.div`
 const Tabs = styled.div`
   > .active {
     > .icon {
-      fill: hsla(100, 100%, 100%, 0.7);
-      border-left: 3px solid hsla(100, 100%, 100%, 0.7);
+      fill: var(--pf-almostwhite);
+      border-left: 3px solid var(--pf-almostwhite);
       padding-left: 7px;
     }
   }
@@ -86,7 +86,7 @@ const Tabs = styled.div`
     fill: hsla(100, 100%, 100%, 0.4);
   }
   .icon:hover {
-    fill: hsla(100, 100%, 100%, 0.7);
+    fill: var(--pf-almostwhite);
   }
 `;
 

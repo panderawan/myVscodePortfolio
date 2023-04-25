@@ -84,7 +84,7 @@ const ExplorerContainer = styled.div`
   height: calc(100vh - 29px - 19px);
   background-color: #1e1f2b;
   box-sizing: border-box;
-  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-right: 1px solid var(--pf-lightdark);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -102,16 +102,16 @@ const Header = styled.div`
   height: 25px;
   font-size: 0.7em;
   font-weight: normal;
-  color: hsla(100, 100%, 100%, 0.1);
+  color: var(--pf-darkgray);
   > svg {
     display: flex;
     margin-left: auto;
     margin-right: 8px;
-    color: hsla(100, 100%, 100%, 0.4);
+    color: var(--pf-lightgray);
     padding: 2px 3px;
   }
   > svg:hover {
-    background-color: hsla(100, 100%, 100%, 0.1);
+    background-color: var(--pf-darkgray);
     border-radius: 5px;
     cursor: pointer;
   }
@@ -120,12 +120,12 @@ const Header = styled.div`
 const Category = styled.div`
   display: flex;
   align-items: center;
-  color: hsla(100, 100%, 100%, 0.4);
+  color: var(--pf-lightgray);
   font-size: 0.7em;
   font-weight: 700;
   cursor: pointer;
   > svg {
-    color: hsla(100, 100%, 100%, 0.6);
+    color: var(--pf-lightgray);
   }
 `;
 
@@ -144,11 +144,11 @@ const StyledNavLink = styled(NavLink)`
     display: flex;
     text-decoration: none;
     margin-left: 5px;
-    color: hsla(100, 100%, 100%, 0.6);
+    color: var(--pf-lightwhite);
   }
   &.active,
   &:hover {
-    background-color: hsla(100, 100%, 100%, 0.05);
+    background-color: var(--pf-hovergray);
   }
 `;
 
@@ -156,7 +156,7 @@ const ExplorerFooter = styled.div`
   display: flex;
   justify-content: flex-end;
   height: 100%;
-  color: hsla(100, 100%, 100%, 0.4);
+  color: var(--pf-lightwhite);
   font-size: 0.6em;
   font-weight: 700;
   flex-direction: column;
@@ -172,6 +172,6 @@ const FooterLink = styled.div`
     align-items: center;
   }
   &:hover {
-    background-color: hsla(100, 100%, 100%, 0.05);
+    background-color: var(--pf-hovergray);
   }
 `;

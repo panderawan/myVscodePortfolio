@@ -65,9 +65,6 @@ const CardContainer = styled.div`
       filter: brightness(120%);
     }
   }
-  @media screen and (max-width: 400px) {
-    /* margin: 0; */
-  }
 `;
 const CardContent = styled.div`
   font-family: Consolas;

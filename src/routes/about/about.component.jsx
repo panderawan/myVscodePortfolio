@@ -30,7 +30,7 @@ const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: hsla(100, 100%, 100%, 0.8);
+  color: var(--pf-almostwhite);
 `;
 
 const AboutName = styled.div`
@@ -55,7 +55,7 @@ const AboutName = styled.div`
 const AboutActivity = styled.div`
   display: flex;
   justify-content: center;
-  color: hsl(20, 96%, 69%);
+  color: var(--pf-orange);
   font-size: 6rem;
   font-weight: 300;
   margin-bottom: 3rem;
@@ -70,7 +70,7 @@ const AboutActivity = styled.div`
     font-size: 2.5rem;
   }
   @media (max-width: 500px) {
-  font-size: 2.0rem;  
+    font-size: 2rem;
   }
   @media (max-width: 300px) {
     font-size: 1rem;

@@ -1,3 +1,14 @@
+:root {
+  --pf-yellow: hsl(40, 100%, 70%);
+  --pf-orange: hsl(20, 96%, 69%);
+  --pf-darkgray: hsla(100, 100%, 100%, 0.1);
+  --pf-lightdark: hsla(0, 0%, 0%, 0.3);
+  --pf-lightgray: hsla(100, 100%, 100%, 0.5);
+  --pf-lightwhite: hsla(100, 100%, 100%, 0.6);
+  --pf-hovergray: hsla(100, 100%, 100%, 0.05);
+  --pf-almostwhite: hsla(100, 100%, 100%, 0.8);
+}
+
 body {
   margin: 0;
   font-family: 'Monaco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -5,7 +16,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
@@ -13,8 +23,6 @@ code {
     monospace;
 }
 
-a:hover,
-a:visited,
-a:link {
-  text-decoration: none;
+a {
+  text-decoration: unset;
 }

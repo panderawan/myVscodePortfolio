@@ -35,8 +35,4 @@ const StyledOutlet = styled.div`
   overflow-y: auto;
   height: calc(100vh - 30px - 18px);
   width: 100%;
-  &::-webkit-scrollbar {
-    width: 0.4em;
-    background-color: #f5f5f5;
-  }
 `;

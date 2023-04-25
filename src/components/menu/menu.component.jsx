@@ -17,7 +17,7 @@ const Menu = () => {
   return (
     <MenuContainer>
       <MenuLinks>
-        <img src={VscLogo} alt="" />
+        <img src={VscLogo} alt='' />
         {menuItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -36,10 +36,10 @@ export default Menu;
 
 const MenuContainer = styled.div`
   box-sizing: border-box;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
+  border-bottom: 1px solid var(--pf-lightdark);
   display: flex;
   background-color: #1e1f2b;
-  color: rgba(255, 255, 255, 0.43);
+  color: var(--pf-lightgray);
   font-family: 'Monaco', sans-serif;
   height: 30px;
 `;
@@ -71,7 +71,7 @@ const MenuLinks = styled.nav`
 
   *:hover {
     cursor: pointer;
-    background-color: hsla(100, 100%, 100%, 0.1);
+    background-color: var(--pf-darkgray);
     border-radius: 5px;
   }
   @media screen and (max-width: 992px) {
@@ -85,7 +85,7 @@ const Title = styled.p`
   align-items: center;
   justify-content: center;
   font-size: 0.65rem;
-  color: hsla(100, 100%, 100%, 0.5);
+  color: var(--pf-lightgray);
   margin: auto;
   @media screen and (max-width: 992px) {
     flex: 4;
@@ -93,7 +93,7 @@ const Title = styled.p`
 `;
 
 const Icons = styled.div`
-  color: hsla(100, 100%, 100%, 0.5);
+  color: var(--pf-lightgray);
   display: flex;
   flex: 1;
   align-items: center;
@@ -109,7 +109,7 @@ const Icons = styled.div`
   }
 
   > :hover {
-    background-color: hsla(100, 100%, 100%, 0.1);
+    background-color: var(--pf-darkgray);
   }
   > :last-child:hover {
     background-color: red;

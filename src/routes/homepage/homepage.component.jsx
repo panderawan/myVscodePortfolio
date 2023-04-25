@@ -17,20 +17,7 @@ export const Homepage = () => {
           <Cursor />
         </Activity>
         <Buttons>
-          <button
-            onClick={() =>
-              (window.location.href = 'https://github.com/panderawan')
-            }
-          >
-            GITHUB
-          </button>
-          <button
-            onClick={() =>
-              (window.location.href = 'https://www.linkedin.com/in/ruddyautem/')
-            }
-          >
-            LINKEDIN
-          </button>
+          <button onClick={() => navigate('/projects')}>PROJETS</button>
           <button onClick={() => navigate('/contact')}>CONTACT</button>
         </Buttons>
       </HomepageContainer>
@@ -47,7 +34,7 @@ const HomepageContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-family: 'Consolas';
-  color: hsla(100, 100%, 100%, 0.8);
+  color: var(--pf-almostwhite);
   overflow-x: hidden;
 `;
 
@@ -69,10 +56,10 @@ const Name = styled.div`
 const Activity = styled.div`
   display: flex;
   width: max-content;
-  color: hsl(20, 96%, 69%);
+  color: var(--pf-orange);
   font-size: 6rem;
   font-weight: 300;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
   span:nth-child(2) {
     display: flex;
     width: 0;
@@ -90,57 +77,43 @@ const Buttons = styled.div`
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 30px;
 
   & button {
-    color: white;
-    font-family: 'Consolas';
-    font-size: 4.5rem;
-    width: 350px;
-    height: 200px;
-
-    font-weight: 600;
-    border: none;
     cursor: pointer;
-    background: hsl(20, 96%, 69%, 80);
-    border-radius: 3px;
-  }
-  & a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-  }
-  & button:hover {
-    border: 3px solid white;
-  }
-  @media (max-width: 1400px) {
-    & button {
-      font-size: 3rem;
-      width: 250px;
-      height: 150px;
+    background-color: var(--pf-orange);
+    color: var(--pf-almostwhite);
+    border: none;
+    width: 250px;
+    height: 80px;
+    font-size: 2em;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      color: white;
+      border: 2px solid white;
+      box-sizing: border-box;
+      box-shadow: 12px 17px 16px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:nth-of-type(2) {
+      background-color: transparent;
+      border: 2px solid var(--pf-orange);
+      &:hover {
+        color: var(--pf-orange);
+      }
     }
   }
-  @media (max-width: 1100px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+  @media (max-width: 1400px) {
+  }
+  @media (max-width: 620px) {
     button {
-      width: 300px;
-      height: 100px;
+      width: 200px;
     }
   }
   @media (max-width: 450px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    > button {
-      font-size: 3rem;
-      width: 250px;
-      height: 100px;
+    button {
+      width: 150px;
+      font-size: 1.5em;
     }
   }
 `;
