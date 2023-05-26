@@ -48,21 +48,26 @@ const CardContainer = styled.div`
   margin: 20px;
   background-color: #1e202c;
   color: #ccc;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
   padding: 0 10px;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
   > img {
     margin-top: 10px;
     height: 300px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 10px;
     object-fit: cover;
-    filter: brightness(90%);
-    transition: filter 0.2s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
     &:hover {
-      filter: brightness(120%);
+      filter: brightness(125%);
+      border: 2px solid hsla(20, 96%, 69%, 0.7);
     }
   }
 `;

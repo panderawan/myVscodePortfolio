@@ -2,26 +2,24 @@ import { useNavigate } from 'react-router-dom';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import styled from 'styled-components';
 
-export const Homepage = () => {
+const Homepage = () => {
   const [text] = useTypewriter({
     words: ['Développeur Web'],
     typeSpeed: 60,
   });
   const navigate = useNavigate();
   return (
-    <>
-      <HomepageContainer>
-        <Name>RUDDY AUTEM</Name>
-        <Activity>
-          {text}
-          <Cursor />
-        </Activity>
-        <Buttons>
-          <button onClick={() => navigate('/projects')}>PROJETS</button>
-          <button onClick={() => navigate('/contact')}>CONTACT</button>
-        </Buttons>
-      </HomepageContainer>
-    </>
+    <HomepageContainer>
+      <Name>RUDDY AUTEM</Name>
+      <ActivityContainer>
+        {text}
+        <Cursor />
+      </ActivityContainer>
+      <ButtonsContainer>
+        <Button onClick={() => navigate('/projects')}>PROJETS</Button>
+        <Button onClick={() => navigate('/contact')}>CONTACT</Button>
+      </ButtonsContainer>
+    </HomepageContainer>
   );
 };
 
@@ -36,15 +34,19 @@ const HomepageContainer = styled.div`
   font-family: 'Consolas';
   color: var(--pf-almostwhite);
   overflow-x: hidden;
+
+  & > div {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const Name = styled.div`
-  display: flex;
-  /* width: max-content; */
   font-size: 10.5em;
   font-weight: 600;
-  margin-bottom: 0.5rem;
   line-height: 1;
+  transition: ease-in-out 0.3s;
+  
+
   @media (max-width: 1400px) {
     font-size: 6em;
   }
@@ -53,17 +55,13 @@ const Name = styled.div`
     font-size: 3rem;
   }
 `;
-const Activity = styled.div`
-  display: flex;
-  width: max-content;
+
+const ActivityContainer = styled.div`
   color: var(--pf-orange);
-  font-size: 6rem;
   font-weight: 300;
-  /* margin-bottom: 6rem; */
-  span:nth-child(2) {
-    display: flex;
-    width: 0;
-  }
+  transition: ease-in-out 0.3s;
+  font-size: 6rem;
+
   @media (max-width: 1400px) {
     font-size: 4em;
   }
@@ -73,47 +71,49 @@ const Activity = styled.div`
   }
 `;
 
-const Buttons = styled.div`
-  margin-top: 3rem;
+const ButtonsContainer = styled.div`
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+`;
 
-  & button {
-    cursor: pointer;
-    background-color: var(--pf-orange);
-    color: var(--pf-almostwhite);
-    border: none;
-    width: 250px;
-    height: 80px;
-    font-size: 2em;
-    transition: ease-in-out 0.3s;
+const Button = styled.button`
+  margin: 0 2px;
+  outline: 2px solid var(--pf-orange);
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--pf-orange);
+  color: var(--pf-almostwhite);
+  border: none;
+  width: 230px;
+  height: 70px;
+  font-size: 2em;
+  transition: ease-in-out 0.3s;
+  
 
+  &:hover {
+    color: white;
+    outline: 2px solid white;
+  }
+
+  &:nth-of-type(2) {
+    background-color: transparent;
     &:hover {
-      color: white;
-      border: 2px solid white;
-      box-sizing: border-box;
-      box-shadow: 12px 17px 16px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    &:nth-of-type(2) {
-      background-color: transparent;
-      border: 2px solid var(--pf-orange);
-      &:hover {
-        color: var(--pf-orange);
-      }
+      color: var(--pf-orange);
     }
   }
   @media (max-width: 1400px) {
+    width: 180px;
+    height: 55px;
+    font-size: 1.7em;
   }
+
   @media (max-width: 620px) {
-    button {
-      width: 200px;
-    }
-  }
-  @media (max-width: 450px) {
-    button {
-      width: 150px;
-      font-size: 1.5em;
-    }
+    width: 120px;
+    height: 40px;
+    font-size: 1.1em;
   }
 `;
